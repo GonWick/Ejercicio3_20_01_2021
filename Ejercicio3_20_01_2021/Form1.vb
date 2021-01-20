@@ -19,9 +19,9 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Num1 = (TextBox1.Text)
-        Num2 = (TextBox2.Text)
-        Num3 = (TextBox3.Text)
+        Num1 = Val(TextBox1.Text)
+        Num2 = Val(TextBox2.Text)
+        Num3 = Val(TextBox3.Text)
         M = (Num1 + Num2 + Num3) / 3
         Label4.Text = ("El precio medio del producto es " & M & " €")
     End Sub
